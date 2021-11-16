@@ -22,28 +22,30 @@
 
   <div class="offer">
     <div class="offer__pricing pricing">
-      <h2 class="pricing__amount">Pageviews</h2>
-      <div class="pricing__slider"></div>
-      <span class="pricing__price">$</span>
-      <span class="pricing__period">/month</span>
-      <div class="pricing__switcher">
-        <span class="pricing__txt txt">Monthly Billing</span>
+      <h2 class="pricing__pageviews">100K Pageviews</h2>
+      <div class="pricing__slider slidecontainer">
+        <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+      </div>
+      <span class="pricing__price">$16.00</span>
+      <span class="pricing__period">/ month</span>
+      <div class="pricing__switcher switcher">
+        <span class="switcher__txt txt">Monthly Billing</span>
         <label class="switch">
           <input type="checkbox">
-          <span class="slider round"></span>
+          <span class="slider--switch round"></span>
         </label>
-        <span class="pricing__txt txt">Yearly Billing</span>
-        <div class="pricing__discount">
-          <span class="pricing__txt txt txt--discount">-25%</span>
+        <span class="switcher__txt txt">Yearly Billing</span>
+        <div class="switcher__discount">
+          <span class="switcher__txt txt txt--discount">-25%</span>
         </div>
       </div>
     </div>
 
     <div class="offer__description description">
       <ul class="description__list">
-        <li class="description__item"><img src="./images/icon-check.svg" alt="" class="description__icon">Unlimited websites</li>
-        <li class="description__item"><img src="./images/icon-check.svg" alt="" class="description__icon">100% data ownership</li>
-        <li class="description__item"><img src="./images/icon-check.svg" alt="" class="description__icon">Email reports</li>
+        <li class="description__item txt"><img src="./images/icon-check.svg" alt="" class="description__icon">Unlimited websites</li>
+        <li class="description__item txt"><img src="./images/icon-check.svg" alt="" class="description__icon">100% data ownership</li>
+        <li class="description__item txt"><img src="./images/icon-check.svg" alt="" class="description__icon">Email reports</li>
       </ul>
       <button class="description__btn">Start my trial</button>
     </div>
