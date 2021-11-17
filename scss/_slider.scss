@@ -54,6 +54,22 @@
     background-position: center;
   }
 
+  .slider-drag::-webkit-slider-thumb {
+    cursor: grabbing;
+    background: darken($slider-bg, 5%);
+    background-image: url(../images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .slider-drag::-moz-range-thumb {
+    cursor: grabbing;
+    background: darken($slider-bg, 5%);
+    background-image: url(../images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
   .slider::-moz-range-progress {
       background-color: $full-slider-bar;
       height: 8px;

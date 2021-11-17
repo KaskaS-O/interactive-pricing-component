@@ -13,8 +13,28 @@ price.innerText = `$${priceValue.toFixed(2)}`
 // Slider styling Chrome
 slider.addEventListener('input', () => {
     let value = slider.value;
-    slider.style.background = `linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) ${value}%, hsl(224, 65%, 95%) ${value}%, hsl(224, 65%, 95%) 100%)`
+    slider.style.background = `linear-gradient(to right, hsl(174, 77%, 80%) 0%, hsl(174, 77%, 80%) ${value}%, hsl(224, 65%, 95%) ${value}%, hsl(224, 65%, 95%) 100%)`;
 });
+
+slider.addEventListener('mousedown', () => {
+    slider.classList.add('slider-drag')
+});
+
+slider.addEventListener('mouseup', () => {
+    if (slider.classList.contains('slider-drag')) {
+        slider.classList.remove('slider-drag')
+    } else return
+})
+
+slider.addEventListener('touchstart', () => {
+    slider.classList.add('slider-drag')
+});
+
+slider.addEventListener('touchend', () => {
+    if (slider.classList.contains('slider-drag')) {
+        slider.classList.remove('slider-drag')
+    } else return
+})
 
 // Disccount inner txt
 if (screenWidth >= 1200) {

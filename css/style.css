@@ -79,7 +79,7 @@ body {
 }
 
 .switch input:checked + .slider--switch {
-  background-color: #cdd7ee;
+  background-color: #a5f3eb;
 }
 
 .switch input:checked + .slider--switch:before {
@@ -114,6 +114,10 @@ body {
 /* Rounded sliders */
 .round {
   border-radius: 24px;
+}
+
+.round:hover {
+  background-color: #a5f3eb;
 }
 
 .round:before {
@@ -176,6 +180,23 @@ body {
   border: none;
   background: #10d5c2;
   cursor: pointer;
+  background-image: url(../images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-drag::-webkit-slider-thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+  background: #0ebeac;
+  background-image: url(../images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider-drag::-moz-range-thumb {
+  cursor: grabbing;
+  background: #0ebeac;
   background-image: url(../images/icon-slider.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -515,6 +536,11 @@ body {
   border-radius: 20px;
   font-size: 1.2rem;
   font-weight: 800;
+}
+
+.description__btn:hover {
+  cursor: pointer;
+  color: white;
 }
 
 @media (max-width: 300px) {
