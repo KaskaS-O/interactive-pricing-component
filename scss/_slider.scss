@@ -2,8 +2,11 @@
 
 .slidecontainer {
   width: 100%; /* Width of the outside container */
-  max-width: 400px;
   margin: 0 auto;
+
+  @media (max-width: $mobile-lg) {
+  max-width: 400px;
+}
 }
 
 /* The slider itself */

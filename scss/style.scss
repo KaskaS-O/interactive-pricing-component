@@ -16,11 +16,19 @@
         padding: 150px 20% 120px;
     }
 
+    @media (min-width: $desktop-sm) {
+        padding: 100px 30%;
+    }
+
     &__title {
         padding-bottom: 10px;
         color: $txt-CTA-bg;
         font-size: 2rem;
         font-weight: 800;
+
+        @media (min-width: $desktop-sm) {
+            font-size: 2.4rem;
+        }
     }
 
     &__txt {
@@ -28,6 +36,11 @@
         color: $txt;
         font-size: 1.5rem;
         line-height: 1.5;
+
+        @media (min-width: $desktop-sm) {
+            padding: 0;
+            font-size: 1.2rem;
+        }
     }
 }
 
@@ -39,6 +52,10 @@
     box-shadow: 0 5px 30px -15px rgb(207, 207, 207);
     background-color: $pricing-component-bg;
     text-align: center;
+
+    @media (min-width: $desktop-sm) {
+        max-width: 600px;
+    }
 }
 
 .pricing {
@@ -53,8 +70,19 @@
         padding: 5%;
     }
 
+    @media (min-width: $desktop-sm) {
+        grid-template-columns: 1fr 1fr auto;
+        padding: 8% 10%;
+    }
+
     &__pageviews {
         grid-area: 1/1/2/3;
+
+        @media (min-width: $desktop-sm) {
+            grid-area: 1/1/2/2;
+            align-self: center;
+            justify-self: start;
+        }
 
         color: $txt;
         font-size: 1.2rem;
@@ -65,11 +93,20 @@
 
     &__slider {
         grid-area: 2/1/3/3;
+
+        @media (min-width: $desktop-sm) {
+            grid-area: 2/1/3/4;
+        }
+
         padding: 30px 0;
     }
 
     &__price {
         justify-self: end;
+
+        @media (min-width: $desktop-sm) {
+            grid-area: 1/2/2/3;
+        }
 
         font-size: 3.2rem;
         font-weight: 800;
@@ -80,6 +117,11 @@
         justify-self: start;
         align-self: center;
 
+        @media (min-width: $desktop-sm) {
+            grid-area: 1/3/2/4;
+        }
+
+        width: max-content;
         padding-left: 5%;
         font-size: 1.4rem;
         color: $txt;
@@ -87,6 +129,10 @@
 
     &__switcher {
         grid-area: 4/1/5/3;
+
+        @media (min-width: $desktop-sm) {
+            grid-area: 3/1/4/4;
+        }
     }
 
 }
@@ -102,6 +148,11 @@
     margin: 0 auto;
     padding: 30px 0 5px;
 
+    @media (min-width: $desktop-sm) {
+        padding-top: 10px;
+        max-width: 280px;
+    }
+
     &__discount {
         position: absolute;
         width: 40px;
@@ -109,6 +160,11 @@
         padding: 2px;
         background-color: $discount-bg;
         border-radius: 20px;
+
+        @media (min-width: $desktop-sm) {
+            width: 100px;
+            right: calc((-100px - 10px));
+        }
     }
 }
 
@@ -116,26 +172,49 @@
     font-size: 1.2rem;
     color: $txt;
 
+    @media (min-width: $desktop-sm) {
+        font-size: 1.1rem;
+    }
+
     &--discount {
         color: $discount-txt;
         font-size: 1rem;
         font-weight: 800;
+
+        @media (min-width: $desktop-sm) {
+            font-size: 0.9rem;
+        }
     }
 }
 
 .description {
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 6% 10% 10%;
 
     @media (max-width: $mobile-xs) {
         padding: 5%;
     }
 
+    @media (min-width: $desktop-sm) {
+        grid-template-columns: 1fr 1fr;
+        padding: 5% 10%;
+    }
+
     &__list {
         list-style: none;
+
+        @media (min-width: $desktop-sm) {
+            text-align: left;
+        }
     }
 
     &__item {
         line-height: 2.3;
+
+        @media (min-width: $desktop-sm) {
+            line-height: 2;
+        }
     }
 
     &__icon {
@@ -155,6 +234,14 @@
 
         @media (max-width: $mobile-xs) {
             margin-top: 20px;
+        }
+
+        @media (min-width: $desktop-sm) {
+            align-self: center;
+            justify-self: end;
+            margin-top: 0;
+            max-width: 220px;
+            font-size: 1rem;
         }
     }
 }
